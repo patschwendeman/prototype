@@ -1,0 +1,31 @@
+.card {
+    background: rgb(112, 112, 155);
+    padding: 20px;
+    height: 500px;
+    width: 1000px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.cardContent {
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.cardNavigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+
+
+
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}

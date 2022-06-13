@@ -1,0 +1,14 @@
+.FeedbackBar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100; 
+}
+
+.FeedbackBar Button {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
