@@ -17,3 +17,12 @@
     align-items: center;
     z-index: 1;
 }
+
+.card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+
+

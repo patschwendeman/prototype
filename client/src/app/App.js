@@ -23,7 +23,12 @@ function App() {
   const [cards, setCards] = useState(mock);
   const [cardLength, setCardLength] = useState(0);
   const [cardCounter, setCardCounter] = useState(0);
-  const [showAnsw, setShowAnsw] = useState('false');
+
+
+  
+
+
+
 
 
   //Fetch Cards from DB
@@ -35,15 +40,10 @@ function App() {
     }
   }
 
-  //Change Answer and Question Content
-  const handleShowAnsw = () => {
-      if(showAnsw === 'true') setShowAnsw('false')
-      if(showAnsw === 'false') setShowAnsw('true')
-  };
+
 
   //Show next Card
   const handleNext = () => {
-    setShowAnsw('false')
     if(cardCounter === cardLength - 1){
       setCardCounter(0);
     }
@@ -61,11 +61,20 @@ function App() {
   return (
     <>
       <div className="App">
-        <Card 
-          currentCard = { cards[cardCounter] }
-          showAnsw = { showAnsw }
-          handleShowAnsw = { handleShowAnsw }
-        />
+        <div className="card">
+          <Card 
+                currentCard = { cards[cardCounter] }
+                
+                
+               
+              
+            />
+          
+        </div>
+        
+        
+
+        
       </div>
       < FeedbackBar handleNext={ handleNext } />
     </>

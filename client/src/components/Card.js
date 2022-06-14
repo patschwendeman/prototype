@@ -1,38 +1,42 @@
-import { useState } from "react";
-import { QuestContainer } from "./QuestContainer";
-import { AnswerContainer } from "./AnswerContainer";
 import "../style/Card.css";
 
-const Card = ({ currentCard, showAnsw, handleShowAnsw }) => {
+const Card = ({ currentCard }) => {
 
     
 
-    if(showAnsw === "false"){
+    
         return(
-            <div className="card">
-                <div className="cardContent">
-                    <QuestContainer quest={ currentCard.quest } />
+            <>
+                <div className="card-inner">
+                    <div className="card-front">
+                        <div className="cardContent">
+                            <p>{currentCard.quest}</p>
+                        </div>
+                        <div className="cardNavigation">
+                        <div className="info">Show Answer</div>
+                            
+        
+                        </div>
+                    </div>
+                    <div className="card-back">
+                        <div className="cardContent">
+                            <p>{currentCard.answer}</p>
+                        </div>
+                        <div className="cardNavigation">
+                            <div className="info">Show Question</div>
+                            
+        
+                        </div>
+                    </div>
+            
                 </div>
-                <div className="cardNavigation">
-                    <button onClick={ handleShowAnsw }>Show</button>
-   
-                </div>
-            </div>
+                
+            </>
+                
+            
         );
-    }
-    else {
-        return(
-            <div className="card">
-                <div className="cardContent">
-                    <AnswerContainer answer={ currentCard.answer } />
-                </div>
-                <div className="cardNavigation">
-                    <button onClick={ handleShowAnsw }>Show</button>
-   
-                </div>
-            </div>
-        );
-    }
+    
+    
 
     
 }

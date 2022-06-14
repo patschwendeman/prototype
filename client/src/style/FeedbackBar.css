@@ -5,10 +5,22 @@
     justify-content: space-around;
     width: 100%;
     z-index: 100; 
+    border-top: solid white 2px;
 }
 
 .FeedbackBar Button {
     border-radius: 100px;
-    width: 100px;
-    height: 100px;
+    border: white solid 2px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+#correct {
+    border: green solid 2px;
+}
+#wrong {
+    border: red solid 2px;
 }
