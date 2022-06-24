@@ -5,10 +5,11 @@
     justify-content: space-around;
     width: 100%;
     z-index: 100; 
+    background-color: rgb(14, 14, 53, 0.9);
     border-top: solid white 2px;
 }
 
-.FeedbackBar Button {
+.FeedbackBar Button, .NavBar Button {
     border-radius: 100px;
     border: white solid 2px;
     width: 75px;
